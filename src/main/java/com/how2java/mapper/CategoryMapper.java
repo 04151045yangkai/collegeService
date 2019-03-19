@@ -1,8 +1,9 @@
 package com.how2java.mapper;
- 
-import java.util.List;
 
-import com.kai.collegeservice.pojo.Category;
+
+import com.how2java.pojo.Category;
+
+import java.util.List;
 
 public interface CategoryMapper {
  

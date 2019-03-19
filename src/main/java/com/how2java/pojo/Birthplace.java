@@ -1,42 +1,42 @@
 package com.how2java.pojo;
 
 public class Birthplace {
-    private Integer birthid;
+    private Integer birthId;
 
-    private String birthpath;
+    private String birthPath;
 
-    private String cityortownship;
+    private String cityOrTownship;
 
     private String address;
 
-    private Integer homephone;
+    private Integer homePhone;
 
-    private Integer zipcode;
+    private Integer zipCode;
 
-    private String issuballowance;
+    private String isSuballowance;
 
-    public Integer getBirthid() {
-        return birthid;
+    public Integer getBirthId() {
+        return birthId;
     }
 
-    public void setBirthid(Integer birthid) {
-        this.birthid = birthid;
+    public void setBirthId(Integer birthId) {
+        this.birthId = birthId;
     }
 
-    public String getBirthpath() {
-        return birthpath;
+    public String getBirthPath() {
+        return birthPath;
     }
 
-    public void setBirthpath(String birthpath) {
-        this.birthpath = birthpath == null ? null : birthpath.trim();
+    public void setBirthPath(String birthPath) {
+        this.birthPath = birthPath;
     }
 
-    public String getCityortownship() {
-        return cityortownship;
+    public String getCityorTownship() {
+        return cityOrTownship;
     }
 
-    public void setCityortownship(String cityortownship) {
-        this.cityortownship = cityortownship == null ? null : cityortownship.trim();
+    public void setCityorTownship(String cityorTownship) {
+        this.cityOrTownship = cityorTownship;
     }
 
     public String getAddress() {
@@ -44,30 +44,30 @@ public class Birthplace {
     }
 
     public void setAddress(String address) {
-        this.address = address == null ? null : address.trim();
+        this.address = address;
     }
 
-    public Integer getHomephone() {
-        return homephone;
+    public Integer getHomePhone() {
+        return homePhone;
     }
 
-    public void setHomephone(Integer homephone) {
-        this.homephone = homephone;
+    public void setHomePhone(Integer homePhone) {
+        this.homePhone = homePhone;
     }
 
-    public Integer getZipcode() {
-        return zipcode;
+    public Integer getZipCode() {
+        return zipCode;
     }
 
-    public void setZipcode(Integer zipcode) {
-        this.zipcode = zipcode;
+    public void setZipCode(Integer zipCode) {
+        this.zipCode = zipCode;
     }
 
     public String getIssuballowance() {
-        return issuballowance;
+        return isSuballowance;
     }
 
-    public void setIssuballowance(String issuballowance) {
-        this.issuballowance = issuballowance == null ? null : issuballowance.trim();
+    public void setIssuballowance(String isSuballowance) {
+        this.isSuballowance = isSuballowance;
     }
 }

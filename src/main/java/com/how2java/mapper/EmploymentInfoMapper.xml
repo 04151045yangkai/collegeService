@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="mapper.EmploymentinfoMapper">
-  <resultMap id="BaseResultMap" type="com.kai.collegeservice.pojo.Employmentinfo">
+<mapper namespace="mapper.EmploymentInfoMapper">
+  <resultMap id="BaseResultMap" type="com.how2java.pojo.EmploymentInfo">
     <result column="eiID" jdbcType="INTEGER" property="eiid" />
     <result column="eiGraduation" jdbcType="VARCHAR" property="eigraduation" />
     <result column="eiUnitName" jdbcType="VARCHAR" property="eiunitname" />
-    <result column="eiOriganizationCode" jdbcType="VARCHAR" property="eioriganizationcode" />
+    <result column="eiOrganizationCode" jdbcType="VARCHAR" property="eioriganizationcode" />
     <result column="eiUnitProperties" jdbcType="CHAR" property="eiunitproperties" />
     <result column="eiUnitPIndustry" jdbcType="CHAR" property="eiunitpindustry" />
     <result column="eiCompanyAddress" jdbcType="VARCHAR" property="eicompanyaddress" />
@@ -18,13 +18,13 @@
     <result column="eiFFzipCode" jdbcType="INTEGER" property="eiffzipcode" />
     <result column="eiTransferHousehold" jdbcType="VARCHAR" property="eitransferhousehold" />
   </resultMap>
-  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.kai.collegeservice.pojo.Employmentinfo">
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.how2java.pojo.Employmentinfo">
     <result column="eiFileForwardAddress" jdbcType="VARBINARY" property="eifileforwardaddress" />
   </resultMap>
   <sql id="Blob_Column_List">
     eiFileForwardAddress
   </sql>
-  <insert id="insert" parameterType="com.kai.collegeservice.pojo.Employmentinfo">
+  <insert id="insert" parameterType="com.how2java.pojo.EmploymentInfo">
     insert into employmentinfo (eiID, eiGraduation, eiUnitName, 
       eiOriganizationCode, eiUnitProperties, eiUnitPIndustry, 
       eiCompanyAddress, eiJobPosition, eiContacts, 
@@ -38,7 +38,7 @@
       #{eifileforwardname,jdbcType=VARCHAR}, #{eiffzipcode,jdbcType=INTEGER}, #{eitransferhousehold,jdbcType=VARCHAR}, 
       #{eifileforwardaddress,jdbcType=VARBINARY})
   </insert>
-  <insert id="insertSelective" parameterType="com.kai.collegeservice.pojo.Employmentinfo">
+  <insert id="insertSelective" parameterType="com.how2java.pojo.EmploymentInfo">
     insert into employmentinfo
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="eiid != null">

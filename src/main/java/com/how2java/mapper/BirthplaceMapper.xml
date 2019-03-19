@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mapper.BirthplaceMapper">
-  <resultMap id="BaseResultMap" type="com.kai.collegeservice.pojo.Birthplace">
+  <resultMap id="BaseResultMap" type="com.how2java.pojo.Birthplace">
     <result column="birthId" jdbcType="INTEGER" property="birthid" />
     <result column="birthPath" jdbcType="VARCHAR" property="birthpath" />
     <result column="cityOrTownShip" jdbcType="CHAR" property="cityortownship" />
@@ -10,7 +10,7 @@
     <result column="zipCode" jdbcType="INTEGER" property="zipcode" />
     <result column="isSubAllowance" jdbcType="CHAR" property="issuballowance" />
   </resultMap>
-  <insert id="insert" parameterType="com.kai.collegeservice.pojo.Birthplace">
+  <insert id="insert" parameterType="com.how2java.pojo.Birthplace">
     insert into birthplace (birthId, birthPath, cityOrTownShip, 
       address, homePhone, zipCode, 
       isSubAllowance)
@@ -18,7 +18,7 @@
       #{address,jdbcType=VARCHAR}, #{homephone,jdbcType=INTEGER}, #{zipcode,jdbcType=INTEGER}, 
       #{issuballowance,jdbcType=CHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.kai.collegeservice.pojo.Birthplace">
+  <insert id="insertSelective" parameterType="com.how2java.pojo.Birthplace">
     insert into birthplace
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="birthid != null">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="mapper.ObtainemploymentMapper">
-  <resultMap id="BaseResultMap" type="com.kai.collegeservice.pojo.Obtainemployment">
+<mapper namespace="mapper.ObtainEmploymentMapper">
+  <resultMap id="BaseResultMap" type="com.how2java.pojo.ObtainEmployment">
     <result column="oeId" jdbcType="INTEGER" property="oeid" />
     <result column="oeIntent" jdbcType="CHAR" property="oeintent" />
     <result column="oeIntentCity" jdbcType="VARCHAR" property="oeintentcity" />
@@ -13,7 +13,7 @@
     values (#{oeid,jdbcType=INTEGER}, #{oeintent,jdbcType=CHAR}, #{oeintentcity,jdbcType=VARCHAR}, 
       #{oeintentsalary,jdbcType=CHAR})
   </insert>
-  <insert id="insertSelective" parameterType="com.kai.collegeservice.pojo.Obtainemployment">
+  <insert id="insertSelective" parameterType="com.how2java.pojo.ObtainEmployment">
     insert into obtainemployment
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="oeid != null">

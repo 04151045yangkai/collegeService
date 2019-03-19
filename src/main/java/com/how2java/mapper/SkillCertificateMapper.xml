@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="mapper.SkillcertificateMapper">
-  <resultMap id="BaseResultMap" type="com.kai.collegeservice.pojo.Skillcertificate">
+<mapper namespace="mapper.SkillCertificateMapper">
+  <resultMap id="BaseResultMap" type="com.how2java.pojo.SkillCertificate">
     <id column="scID" jdbcType="INTEGER" property="scid" />
     <result column="scName" jdbcType="VARCHAR" property="scname" />
     <result column="scContent" jdbcType="VARCHAR" property="sccontent" />
@@ -19,13 +19,13 @@
     delete from skillcertificate
     where scID = #{scid,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.kai.collegeservice.pojo.Skillcertificate">
+  <insert id="insert" parameterType="com.how2java.pojo.SkillCertificate">
     insert into skillcertificate (scID, scName, scContent
       )
     values (#{scid,jdbcType=INTEGER}, #{scname,jdbcType=VARCHAR}, #{sccontent,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.kai.collegeservice.pojo.Skillcertificate">
+  <insert id="insertSelective" parameterType="com.how2java.pojo.SkillCertificate">
     insert into skillcertificate
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="scid != null">
@@ -50,7 +50,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.kai.collegeservice.pojo.Skillcertificate">
+  <update id="updateByPrimaryKeySelective" parameterType="com.how2java.pojo.SkillCertificate">
     update skillcertificate
     <set>
       <if test="scname != null">
@@ -62,7 +62,7 @@
     </set>
     where scID = #{scid,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.kai.collegeservice.pojo.Skillcertificate">
+  <update id="updateByPrimaryKey" parameterType="com.how2java.pojo.SkillCertificate">
     update skillcertificate
     set scName = #{scname,jdbcType=VARCHAR},
       scContent = #{sccontent,jdbcType=VARCHAR}

@@ -1,18 +1,22 @@
 package com.how2java.mapper;
 
 
-import com.kai.collegeservice.pojo.Login;
+
+import com.how2java.pojo.Login;
 
 public interface LoginMapper {
-    int deleteByPrimaryKey(Integer userid);
+    int deleteByPrimaryKey(Integer userId);
 
     int insert(Login record);
 
     int insertSelective(Login record);
 
-    Login selectByPrimaryKey(Integer userid);
+    Login selectByPrimaryKey(Integer userId);
 
     int updateByPrimaryKeySelective(Login record);
 
     int updateByPrimaryKey(Login record);
+
+    public Login login(String userId,String password,int userFlag);
+
 }

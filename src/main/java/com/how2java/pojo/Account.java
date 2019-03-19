@@ -3,46 +3,46 @@ package com.how2java.pojo;
 import java.util.Date;
 
 public class Account {
-    private String idcard;
+    private String idCard;
 
-    private Integer auserid;
+    private Integer AuserId;
 
     private String politics;
 
     private String nation;
 
-    private String majorfield;
+    private String majorField;
 
     private Date birthday;
 
-    private String archivesinschool;
+    private String archivesInSchool;
 
-    private String rresidenceinschool;
+    private String rResidenceInSchool;
 
-    private String archivespath;
+    private String archivesPath;
 
-    private String rresidencepath;
+    private String rResidencePath;
 
-    private Integer qqnum;
+    private Integer qqNum;
 
-    private Integer phonenum;
+    private Integer phoneNum;
 
     private String email;
 
-    public String getIdcard() {
-        return idcard;
+    public String getIdCard() {
+        return idCard;
     }
 
-    public void setIdcard(String idcard) {
-        this.idcard = idcard == null ? null : idcard.trim();
+    public void setIdCard(String idCard) {
+        this.idCard = idCard;
     }
 
-    public Integer getAuserid() {
-        return auserid;
+    public Integer getAuserId() {
+        return AuserId;
     }
 
-    public void setAuserid(Integer auserid) {
-        this.auserid = auserid;
+    public void setAuserId(Integer auserId) {
+        AuserId = auserId;
     }
 
     public String getPolitics() {
@@ -50,7 +50,7 @@ public class Account {
     }
 
     public void setPolitics(String politics) {
-        this.politics = politics == null ? null : politics.trim();
+        this.politics = politics;
     }
 
     public String getNation() {
@@ -58,15 +58,15 @@ public class Account {
     }
 
     public void setNation(String nation) {
-        this.nation = nation == null ? null : nation.trim();
+        this.nation = nation;
     }
 
-    public String getMajorfield() {
-        return majorfield;
+    public String getMajorField() {
+        return majorField;
     }
 
-    public void setMajorfield(String majorfield) {
-        this.majorfield = majorfield == null ? null : majorfield.trim();
+    public void setMajorField(String majorField) {
+        this.majorField = majorField;
     }
 
     public Date getBirthday() {
@@ -77,52 +77,52 @@ public class Account {
         this.birthday = birthday;
     }
 
-    public String getArchivesinschool() {
-        return archivesinschool;
+    public String getArchivesInSchool() {
+        return archivesInSchool;
     }
 
-    public void setArchivesinschool(String archivesinschool) {
-        this.archivesinschool = archivesinschool == null ? null : archivesinschool.trim();
+    public void setArchivesInSchool(String archivesInSchool) {
+        this.archivesInSchool = archivesInSchool;
     }
 
-    public String getRresidenceinschool() {
-        return rresidenceinschool;
+    public String getrResidenceInSchool() {
+        return rResidenceInSchool;
     }
 
-    public void setRresidenceinschool(String rresidenceinschool) {
-        this.rresidenceinschool = rresidenceinschool == null ? null : rresidenceinschool.trim();
+    public void setrResidenceInSchool(String rResidenceInSchool) {
+        this.rResidenceInSchool = rResidenceInSchool;
     }
 
-    public String getArchivespath() {
-        return archivespath;
+    public String getArchivesPath() {
+        return archivesPath;
     }
 
-    public void setArchivespath(String archivespath) {
-        this.archivespath = archivespath == null ? null : archivespath.trim();
+    public void setArchivesPath(String archivesPath) {
+        this.archivesPath = archivesPath;
     }
 
-    public String getRresidencepath() {
-        return rresidencepath;
+    public String getrResidencePath() {
+        return rResidencePath;
     }
 
-    public void setRresidencepath(String rresidencepath) {
-        this.rresidencepath = rresidencepath == null ? null : rresidencepath.trim();
+    public void setrResidencePath(String rResidencePath) {
+        this.rResidencePath = rResidencePath;
     }
 
-    public Integer getQqnum() {
-        return qqnum;
+    public Integer getQqNum() {
+        return qqNum;
     }
 
-    public void setQqnum(Integer qqnum) {
-        this.qqnum = qqnum;
+    public void setQqNum(Integer qqNum) {
+        this.qqNum = qqNum;
     }
 
-    public Integer getPhonenum() {
-        return phonenum;
+    public Integer getPhoneNum() {
+        return phoneNum;
     }
 
-    public void setPhonenum(Integer phonenum) {
-        this.phonenum = phonenum;
+    public void setPhoneNum(Integer phoneNum) {
+        this.phoneNum = phoneNum;
     }
 
     public String getEmail() {
@@ -130,6 +130,6 @@ public class Account {
     }
 
     public void setEmail(String email) {
-        this.email = email == null ? null : email.trim();
+        this.email = email;
     }
 }

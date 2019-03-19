@@ -1,7 +1,7 @@
 package com.how2java.mapper;
 
 
-import com.kai.collegeservice.pojo.Birthplace;
+import com.how2java.pojo.Birthplace;
 
 public interface BirthplaceMapper {
     int insert(Birthplace record);

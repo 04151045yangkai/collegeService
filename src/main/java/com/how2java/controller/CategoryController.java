@@ -29,7 +29,7 @@ public class CategoryController {
 		List<Category> cs= categoryService.list();
 		int total = (int) new PageInfo<>(cs).getTotal();
 		
-		page.caculateLast(total);
+		page.calculateLast(total);
 		
 		// 放入转发参数
 		mav.addObject("cs", cs);

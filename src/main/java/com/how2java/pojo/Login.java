@@ -1,18 +1,18 @@
 package com.how2java.pojo;
 
 public class Login {
-    private Integer userid;
+    private Integer userID;
 
     private String password;
 
-    private Integer userflag;
+    private Integer userFlag;
 
-    public Integer getUserid() {
-        return userid;
+    public Integer getUserID() {
+        return userID;
     }
 
-    public void setUserid(Integer userid) {
-        this.userid = userid;
+    public void setUserID(Integer userID) {
+        this.userID = userID;
     }
 
     public String getPassword() {
@@ -20,14 +20,14 @@ public class Login {
     }
 
     public void setPassword(String password) {
-        this.password = password == null ? null : password.trim();
+        this.password = password;
     }
 
-    public Integer getUserflag() {
-        return userflag;
+    public Integer getUserFlag() {
+        return userFlag;
     }
 
-    public void setUserflag(Integer userflag) {
-        this.userflag = userflag;
+    public void setUserFlag(Integer userFlag) {
+        this.userFlag = userFlag;
     }
 }

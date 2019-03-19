@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="mapper.PoorstudentcardMapper">
-  <resultMap id="BaseResultMap" type="com.kai.collegeservice.pojo.Poorstudentcard">
+<mapper namespace="mapper.PoorStudentCardMapper">
+  <resultMap id="BaseResultMap" type="com.how2java.pojo.PoorStudentCard">
     <result column="poorId" jdbcType="INTEGER" property="poorid" />
     <result column="poorState" jdbcType="CHAR" property="poorstate" />
     <result column="pObtainProgress" jdbcType="VARCHAR" property="pobtainprogress" />
@@ -9,7 +9,7 @@
     <result column="pHelpContacts" jdbcType="VARCHAR" property="phelpcontacts" />
     <result column="pHelpPhone" jdbcType="INTEGER" property="phelpphone" />
   </resultMap>
-  <insert id="insert" parameterType="com.kai.collegeservice.pojo.Poorstudentcard">
+  <insert id="insert" parameterType="com.how2java.pojo.PoorStudentCard">
     insert into poorstudentcard (poorId, poorState, pObtainProgress, 
       pHelpContent, pHelpContacts, pHelpPhone
       )
@@ -17,7 +17,7 @@
       #{phelpcontent,jdbcType=VARCHAR}, #{phelpcontacts,jdbcType=VARCHAR}, #{phelpphone,jdbcType=INTEGER}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.kai.collegeservice.pojo.Poorstudentcard">
+  <insert id="insertSelective" parameterType="com.how2java.pojo.PoorStudentCard">
     insert into poorstudentcard
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="poorid != null">

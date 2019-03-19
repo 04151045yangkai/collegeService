@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mapper.LoginMapper">
-  <resultMap id="BaseResultMap" type="com.kai.collegeservice.pojo.Login">
+  <resultMap id="BaseResultMap" type="com.how2java.pojo.Login">
     <id column="userId" jdbcType="INTEGER" property="userid" />
     <result column="passWord" jdbcType="VARCHAR" property="password" />
     <result column="userFlag" jdbcType="INTEGER" property="userflag" />
@@ -19,13 +19,13 @@
     delete from login
     where userId = #{userid,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.kai.collegeservice.pojo.Login">
+  <insert id="insert" parameterType="com.how2java.pojo.Login">
     insert into login (userId, passWord, userFlag
       )
     values (#{userid,jdbcType=INTEGER}, #{password,jdbcType=VARCHAR}, #{userflag,jdbcType=INTEGER}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.kai.collegeservice.pojo.Login">
+  <insert id="insertSelective" parameterType="com.how2java.pojo.Login">
     insert into login
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="userid != null">
@@ -50,7 +50,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.kai.collegeservice.pojo.Login">
+  <update id="updateByPrimaryKeySelective" parameterType="com.how2java.pojo.pojo.Login">
     update login
     <set>
       <if test="password != null">
@@ -62,10 +62,16 @@
     </set>
     where userId = #{userid,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="pojo.Login">
+  <update id="updateByPrimaryKey" parameterType="com.how2java.pojo.Login">
     update login
     set passWord = #{password,jdbcType=VARCHAR},
       userFlag = #{userflag,jdbcType=INTEGER}
     where userId = #{userid,jdbcType=INTEGER}
   </update>
+
+  <select id="login" resultType="Login" parameterType="com.how2java.pojo.Login" >
+    select * from Login where userid=#{userid} and password=#{password}
+    </select>
+
+
 </mapper>
